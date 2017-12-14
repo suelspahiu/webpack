@@ -38,9 +38,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	function __webpack_require__(moduleId) {
 /******/
 /******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
+/******/ 		if(installedModules[moduleId]) {
 /******/ 			return installedModules[moduleId].exports;
-/******/
+/******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
@@ -64,9 +64,6 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/ 	// expose the module cache
 /******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// identity function for calling harmony imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
 /******/
 /******/ 	// define getter function for harmony exports
 /******/ 	__webpack_require__.d = function(exports, name, getter) {
@@ -105,11 +102,11 @@ return /******/ (function(modules) { // webpackBootstrap
 ``` js
 /******/ ([
 /* 0 */
-/* exports provided: value, increment, default */
-/* all exports used */
 /*!********************!*\
   !*** ./example.js ***!
   \********************/
+/*! exports provided: value, increment, default */
+/*! all exports used */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -133,10 +130,10 @@ function increment() {
 ## Uncompressed
 
 ```
-Hash: 313bc0b3685e952e6c32
-Version: webpack 2.3.2
-           Asset    Size  Chunks             Chunk Names
-MyLibrary.umd.js  3.6 kB       0  [emitted]  main
+Hash: 0b2bf5443af50d14e1e0
+Version: webpack 3.5.1
+           Asset     Size  Chunks             Chunk Names
+MyLibrary.umd.js  3.45 kB       0  [emitted]  main
 Entrypoint main = MyLibrary.umd.js
 chunk    {0} MyLibrary.umd.js (main) 97 bytes [entry] [rendered]
     > main [0] ./example.js 
@@ -147,10 +144,10 @@ chunk    {0} MyLibrary.umd.js (main) 97 bytes [entry] [rendered]
 ## Minimized (uglify-js, no zip)
 
 ```
-Hash: 313bc0b3685e952e6c32
-Version: webpack 2.3.2
+Hash: 0b2bf5443af50d14e1e0
+Version: webpack 3.5.1
            Asset       Size  Chunks             Chunk Names
-MyLibrary.umd.js  898 bytes       0  [emitted]  main
+MyLibrary.umd.js  872 bytes       0  [emitted]  main
 Entrypoint main = MyLibrary.umd.js
 chunk    {0} MyLibrary.umd.js (main) 97 bytes [entry] [rendered]
     > main [0] ./example.js 
